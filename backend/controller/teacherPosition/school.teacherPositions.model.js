@@ -1,0 +1,18 @@
+import mongoose from "mongoose";
+
+
+
+const teacherPositionSchema = new mongoose.Schema({
+    _id: { type: mongoose.Schema.Types.ObjectId, auto: true },
+
+    name: { type: String, required: true },
+    code: { type: String, required: true, unique: true },
+    des: { type: String },
+
+    isActive: { type: Boolean, default: true },
+    isDeleted: { type: Boolean, default: false }
+});
+
+const TeacherPosition = mongoose.model("TeacherPosition", teacherPositionSchema);
+
+export default TeacherPosition;

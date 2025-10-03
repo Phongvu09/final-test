@@ -1,0 +1,189 @@
+.teacher-list {
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.actions input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-create,
+.btn-reload {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-create {
+    background: #007bff;
+    color: white;
+}
+
+.btn-create:hover {
+    background: #0056b3;
+}
+
+.btn-reload {
+    background: #f1f1f1;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.teacher-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.teacher-table th,
+.teacher-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 14px;
+}
+
+.teacher-table th {
+    background: #f9f9f9;
+    font-weight: bold;
+}
+
+.teacher-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.teacher-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.teacher-info .name {
+    font-weight: 600;
+    color: #333;
+}
+
+.teacher-info .sub {
+    font-size: 12px;
+    color: #777;
+}
+
+.badge {
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.badge.inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.btn-detail {
+    padding: 6px 10px;
+    background: #f1f1f1;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-detail:hover {
+    background: #e2e2e2;
+}
+
+/* overlay + side-panel */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+}
+
+.side-panel {
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.pagination .pages {
+    display: flex;
+    gap: 6px;
+}
+
+.pagination button {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.pagination button.active {
+    background: #007bff;
+    color: white;
+}
+
+.pagination select {
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

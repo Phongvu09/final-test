@@ -1,0 +1,86 @@
+.position-list {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.btn-create {
+    padding: 8px 14px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-create:hover {
+    background: #1e40af;
+}
+
+/* Table */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.position-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.position-table th,
+.position-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.position-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Status */
+.status {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.status.active {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.status.inactive {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* Side panel form */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+}
+
+.side-panel {
+    width: 400px;
+    height: 100vh;
+    background: white;
+    padding: 20px;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}

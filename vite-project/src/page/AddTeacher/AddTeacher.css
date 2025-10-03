@@ -1,0 +1,111 @@
+.add-teacher {
+    width: 100%;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.add-teacher h2 {
+    margin-bottom: 16px;
+    color: #2c3e50;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    color: #34495e;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+
+.field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-teacher label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+/* Input nhỏ gọn hơn */
+.add-teacher input,
+.add-teacher select {
+    padding: 6px 8px;
+    /* giảm padding */
+    font-size: 14px;
+    /* chữ nhỏ hơn */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    /* vẫn full trong field, nhưng field nhỏ hơn */
+    box-sizing: border-box;
+}
+
+/* Nút thêm */
+.btn-add {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.btn-add:hover {
+    background: #2980b9;
+}
+
+.degree-form {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px dashed #aaa;
+    border-radius: 4px;
+    background: #fafafa;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-save {
+    background: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-save:hover {
+    background: #1e8449;
+}
+
+.btn-cancel {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-cancel:hover {
+    background: #c0392b;
+}
